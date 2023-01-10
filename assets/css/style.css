@@ -267,7 +267,7 @@ h6 {
 }
 
 .navbar-mobile {
-  position: fixed;
+  /* position: fixed; */
   overflow: hidden;
   top: 0;
   right: 0;
@@ -453,15 +453,29 @@ h6 {
   }
 
   #hero .hero-img img {
-    width: 70%;
+    width: 80%;
   }
 }
 
 @media (max-width: 575px) {
   #hero .hero-img img {
-    width: 80%;
+    margin-top: 80px;
+    height: 70%;
+    width: 70%;
+  }
+
+  #hero h2 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+
+  #hero h1 {
+    font-size: 22px;
+    line-height: 30px;
   }
 }
+
 
 @-webkit-keyframes up-down {
   0% {
@@ -482,6 +496,9 @@ h6 {
     transform: translateY(-10px);
   }
 }
+
+
+
 /* ---------- preloder */
 #preloader {
   position: fixed;
@@ -513,6 +530,7 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -522,10 +540,12 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 /* -------------- */
 
 /*--------------------------------------------------------------
@@ -701,7 +721,7 @@ section {
 .counts .content .count-box i {
   display: block;
   font-size: 36px;
-  color: #3498db;
+  color: red;
   float: left;
   line-height: 0;
 }
@@ -1245,11 +1265,11 @@ section {
   border: 2px solid rgb(214, 25, 25);
 }
 
-#speakercard  .social-links {
+#speakercard .social-links {
   padding-bottom: 20px;
 }
 
-#speakercard  .social-links a {
+#speakercard .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #fff;
@@ -1269,6 +1289,7 @@ section {
   background: red;
   color: #fff;
 }
+
 /* ---------------------------------------------------------- */
 
 /*--------------------------------------------------------------
@@ -1303,6 +1324,23 @@ section {
   -webkit-box-shadow: 14px 12px 48px -13px rgba(20, 18, 18, 0.49);
   -moz-box-shadow: 14px 12px 48px -13px rgba(20, 18, 18, 0.49);
   transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 1024px) {
+  .team .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    /* box-shadow: 10px 2px 30px rgba(0, 0, 0, 0); */
+    box-shadow: 14px 12px 48px -13px rgba(20, 18, 18, 0.49);
+    -webkit-box-shadow: 14px 12px 48px -13px rgba(20, 18, 18, 0.49);
+    -moz-box-shadow: 14px 12px 48px -13px rgba(20, 18, 18, 0.49);
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .team .member .member-img {
@@ -1357,6 +1395,7 @@ section {
   color: #222222;
 }
 
+
 .team .member .member-info span {
   display: block;
   font-size: 13px;
@@ -1373,6 +1412,14 @@ section {
 
 .team .member:hover .social {
   opacity: 1;
+}
+
+@media (max-width: 575px) {
+  #team .member-img img {
+    width: 50%;
+    height: 50%;
+    margin-top: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1570,7 +1617,7 @@ section {
   font-size: 14px;
 }
 
-.contact .php-email-form .error-message {
+.contact .emailform .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1579,11 +1626,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .emailform .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .emailform .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1592,14 +1639,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .emailform .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .emailform .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1612,24 +1659,24 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form .form-group {
+.contact .emailform .form-group {
   margin-bottom: 20px;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .emailform input,
+.contact .emailform textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   padding: 10px 15px;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .emailform input:focus,
+.contact .emailform textarea:focus {
   border-color: red;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .emailform button[type=submit] {
   background: red;
   border: 0;
   padding: 10px 24px;
@@ -1638,7 +1685,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .emailform button[type=submit]:hover {
   background: red;
 }
 
