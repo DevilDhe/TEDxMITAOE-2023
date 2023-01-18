@@ -160,6 +160,8 @@ h6 {
   color: red;
 }
 
+
+
 .navbar .getstarted,
 .navbar .getstarted:focus {
   background: #ffffff;
@@ -300,7 +302,7 @@ h6 {
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   font-size: 15px;
   color: #700101;
 }
@@ -351,6 +353,15 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+
+.navbar-mobile #sze {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: red;
+}
+
+
 
 /*--------------------------------------------------------------
 # hero Section
@@ -465,14 +476,18 @@ h6 {
   }
 
   #hero h2 {
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 20px;
   }
 
   #hero h1 {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 18px;
+  }
+
+  #hero .sze {
+    margin-bottom: 30px;
   }
 }
 
@@ -697,6 +712,8 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+
 
 /*--------------------------------------------------------------
 # Counts
